@@ -1,3 +1,29 @@
+Commit 475cca6
+ruzi1boyva
+ruzi1boyva
+authored
+15 minutes ago
+Verified
+Add files via upload
+main
+1 parent 
+75ca9d8
+ commit 
+475cca6
+1 file changed
+
++14
+Lines changed: 14 additions & 0 deletions
+File tree
+Filter files…
+package.json
+Search within code
+ 
+‎package.json‎
++14
+Lines changed: 14 additions & 0 deletions
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,14 @@
 {
   "name": "kiddoland",
   "version": "1.0.0",
@@ -12,3 +38,9 @@
   "license": "ISC",
   "type": "commonjs"
 }
+0 commit comments
+Comments
+0
+ (0)
+Comment
+You're not receiving notifications from this thread.
