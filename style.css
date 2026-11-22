@@ -1,0 +1,674 @@
+
+/* LANGUAGE SELECTOR */
+
+#language {
+    padding: 10px;
+    border: 2px solid #a78bfa;
+    border-radius: 12px;
+    background: white;
+    color: #49365f;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* AGE CARDS */
+
+.age-card {
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.age-card.selected {
+    border-color: #a78bfa;
+    background: #f0eaff;
+    transform: translateY(-6px);
+}
+
+#age-message {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b6be0;
+}
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8fd;
+    color: #49365f;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 3px 15px #00000010;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    color: #a78bfa;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #49365f;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ec78b9;
+}
+
+/* LANGUAGE */
+
+#language {
+    padding: 10px;
+    border: 2px solid #a78bfa;
+    border-radius: 12px;
+    background: white;
+    color: #49365f;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 110px 20px;
+    background: linear-gradient(
+        135deg,
+        #e9ddff,
+        #ffe0f0,
+        #d9f7e9
+    );
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #a78bfa;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #8b6be0;
+    transform: translateY(-3px);
+}
+
+/* ALL SECTIONS */
+
+section:not(.hero) {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(180px, 1fr)
+    );
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px #0000000d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #a78bfa30;
+}
+
+/* AGE CARDS */
+
+.age-card {
+    border: 3px solid transparent;
+}
+
+.age-card.selected {
+    border-color: #a78bfa;
+    background: #f0eaff;
+    transform: translateY(-6px);
+}
+
+#age-message {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b6be0;
+}
+
+/* SECTION COLORS */
+
+#ages {
+    background: #fff8fd;
+}
+
+#subjects {
+    background: #fff8fd;
+}
+
+#games {
+    background: #f0eaff;
+}
+
+#quizzes {
+    background: #fff0f7;
+}
+
+#stories {
+    background: #fff8e8;
+}
+
+#progress {
+    background: #e9fff2;
+}
+
+#profile {
+    background: #eaf4ff;
+}
+
+#assistant {
+    background: #f5edff;
+}
+
+#about {
+    background: #e9fff2;
+}
+
+/* FOOTER */
+
+footer {
+    background: #49365f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 700px) {
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 75px 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    section:not(.hero) {
+        padding: 45px 5%;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
+
+/* 🎮 MATH GAME DESIGN */
+
+.game-box {
+    max-width: 550px;
+    margin: 30px auto 0;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #a78bfa25;
+}
+
+.game-box h3 {
+    color: #8b6be0;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+#question {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #49365f;
+}
+
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.answer-option {
+    padding: 18px;
+    border: 2px solid #e5d9ff;
+    border-radius: 15px;
+    background: #f8f3ff;
+    color: #49365f;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.answer-option:hover:not(:disabled) {
+    background: #e9ddff;
+    transform: translateY(-3px);
+}
+
+.answer-option:disabled {
+    cursor: default;
+}
+
+.answer-option.correct {
+    background: #d9f7e9;
+    border-color: #86d9a7;
+}
+
+#game-message {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#score {
+    font-size: 21px;
+    color: #8b6be0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#next-question:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+    .game-box {
+        padding: 25px 15px;
+    }
+
+    #question {
+        font-size: 30px;
+    }
+}
+/* PROFILE DESIGN */
+
+.profile-card {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 35px;
+    font-size: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #00000015;
+}
+
+.profile-card h3 {
+    font-size: 26px;
+}
+
+.profile-card p {
+    font-size: 21px;
+}
+
+#selected-avatar {
+    font-size: 75px;
+    margin: 20px;
+}
+
+.avatar-option {
+    font-size: 35px;
+    padding: 12px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#player-name {
+    font-size: 20px;
+    padding: 12px;
+    margin: 15px;
+}
+
+#save-profile {
+    font-size: 20px;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* 🎉 KIDDOLAND LEVEL UP ANIMATION */
+
+.level-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(35, 20, 70, 0.75);
+    animation: popupFade 0.4s ease;
+}
+
+.level-popup-card {
+    width: 90%;
+    max-width: 500px;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #fff2a8, #ffc6e7, #c9c4ff);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+    animation: popupZoom 0.6s ease;
+}
+
+.level-popup-card h1 {
+    font-size: 34px;
+    color: #ff5b8a;
+}
+
+.level-popup-card h2 {
+    font-size: 30px;
+    color: #7138c8;
+}
+
+.level-popup-card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #49346d;
+}
+
+.level-popup-card .gift {
+    font-size: 65px;
+    margin: 20px;
+    animation: giftBounce 1s infinite;
+}
+
+.level-popup-card button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 18px;
+    background: #7138c8;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.level-popup-card button:hover {
+    background: #ff5b8a;
+    transform: scale(1.05);
+}
+
+@keyframes popupFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popupZoom {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes giftBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* 🦄 AVATAR SHOP DESIGN */
+
+#avatar-shop {
+    padding: 60px 25px;
+    text-align: center;
+    background: linear-gradient(135deg, #fce4ff, #e1edff, #fff2d5);
+    border-radius: 30px;
+    margin: 40px 20px;
+}
+
+#avatar-shop h2 {
+    font-size: 38px;
+    color: #8139c9;
+}
+
+#avatar-shop > p {
+    font-size: 20px;
+    color: #555;
+}
+
+#avatar-shop h3 {
+    color: #7436b5;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+.shop-item {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #00000012;
+    transition: 0.3s;
+}
+
+.shop-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px #8b55cc35;
+}
+
+.shop-avatar {
+    font-size: 75px;
+    margin: 15px;
+}
+
+.shop-item h3 {
+    font-size: 24px;
+}
+
+.shop-item p {
+    font-size: 21px;
+    font-weight: bold;
+    color: #f0a500;
+}
+
+.shop-item button {
+    background: linear-gradient(135deg, #a65cf0, #ed70bd);
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-item button:hover {
+    transform: scale(1.08);
+}
+
+/* =================================
+   🌟 KIDDOLAND 3D AVATAR COLLECTION
+================================= */
+
+#avatar-shop {
+    padding: 60px 25px;
+    margin: 40px 20px;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #eee4ff, #dff5ff, #fff0f8);
+}
+
+#avatar-shop h2 {
+    font-size: 38px;
+    color: #8139c9;
+}
+
+#avatar-shop > p {
+    font-size: 19px;
+    color: #555;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.shop-item {
+    padding: 20px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #00000015;
+    transition: 0.3s;
+}
+
+.shop-item:hover {
+    transform: translateY(-9px) scale(1.02);
+    box-shadow: 0 15px 30px #9255cc35;
+}
+
+.avatar-face {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 22px;
+
+    background-image: url("avatars.png");
+    background-size: 300% 400%;
+    background-repeat: no-repeat;
+}
+
+/* 12 TA AVATAR JOYLASHUVI */
+
+.astronaut { background-position: 0% 0%; }
+.dragon    { background-position: 50% 0%; }
+.robot     { background-position: 100% 0%; }
+
+.elf       { background-position: 0% 33.333%; }
+.inventor  { background-position: 50% 33.333%; }
+.cloud     { background-position: 100% 33.333%; }
+
+.phoenix   { background-position: 0% 66.667%; }
+.wizard    { background-position: 50% 66.667%; }
+.alien     { background-position: 100% 66.667%; }
+
+.knight    { background-position: 0% 100%; }
+.crystal   { background-position: 50% 100%; }
+.gamer     { background-position: 100% 100%; }
+
+.shop-item h3 {
+    color: #7436b5;
+    font-size: 21px;
+}
+
+.shop-item p {
+    color: #f0a500;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.shop-item button {
+    background: linear-gradient(135deg, #a65cf0, #ed70bd);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-item button:hover {
+    transform: scale(1.07);
+}
+
+.shop-item button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}

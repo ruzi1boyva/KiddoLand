@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiddoLand - Learn and Play!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🌈 KiddoLand</h1>
+
+        <nav>
+            <a href="#home" data-uz="Bosh sahifa" data-en="Home">Bosh sahifa</a>
+            <a href="#ages" data-uz="Yosh guruhlari" data-en="Age Groups">Yosh guruhlari</a>
+            <a href="#subjects" data-uz="Fanlar" data-en="Subjects">Fanlar</a>
+            <a href="#games" data-uz="O‘yinlar" data-en="Games">O‘yinlar</a>
+            <a href="#quizzes" data-uz="Testlar" data-en="Quizzes">Testlar</a>
+            <a href="#about" data-uz="Biz haqimizda" data-en="About">Biz haqimizda</a>
+        </nav>
+
+        <select id="language" aria-label="Choose language">
+            <option value="uz">🇺🇿 O‘zbekcha</option>
+            <option value="en">🇬🇧 English</option>
+        </select>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <h2 data-uz="KiddoLand olamiga xush kelibsiz! 🎉"
+                data-en="Welcome to KiddoLand! 🎉">
+                KiddoLand olamiga xush kelibsiz! 🎉
+            </h2>
+
+            <p data-uz="O‘rganing, o‘ynang va yangi narsalarni kashf eting!"
+               data-en="Learn, play and discover something new!">
+                O‘rganing, o‘ynang va yangi narsalarni kashf eting!
+            </p>
+
+            <a href="#ages" class="button"
+               data-uz="Boshlash" data-en="Get Started">
+                Boshlash
+            </a>
+        </section>
+
+        <!-- AGE GROUPS -->
+        <section id="ages">
+            <h2 data-uz="👶 Yosh guruhingizni tanlang"
+                data-en="👶 Choose Your Age Group">
+                👶 Yosh guruhingizni tanlang
+            </h2>
+
+            <div class="cards">
+                <div class="card age-card" data-age="3-5">
+                    🐣 3–5 yosh
+                    <p>Little Kids</p>
+                </div>
+
+                <div class="card age-card" data-age="6-8">
+                    🧸 6–8 yosh
+                    <p>Smart Kids</p>
+                </div>
+
+                <div class="card age-card" data-age="9-10">
+                    🚀 9–10 yosh
+                    <p>Clever Kids</p>
+                </div>
+
+                <div class="card age-card" data-age="11-12">
+                    🌟 11–12 yosh
+                    <p>Young Explorers</p>
+                </div>
+            </div>
+
+            <p id="age-message"></p>
+        </section>
+
+        <!-- SUBJECTS -->
+        <section id="subjects">
+            <h2 data-uz="📚 Fanlarni tanlang"
+                data-en="📚 Choose Your Subjects">
+                📚 Fanlarni tanlang
+            </h2>
+
+            <div class="cards">
+                <div class="card">🇬🇧 English</div>
+                <div class="card">🔢 Mathematics</div>
+                <div class="card">🔬 Science</div>
+                <div class="card">🌍 Geography</div>
+                <div class="card">💻 Coding</div>
+                <div class="card">🎨 Art</div>
+                <div class="card">📖 Reading</div>
+                <div class="card">🎵 Music</div>
+            </div>
+        </section>
+
+        <!-- GAMES -->
+        <section id="games">
+            <h2 data-uz="🎮 Qiziqarli o‘yinlar"
+                data-en="🎮 Fun Games">
+                🎮 Qiziqarli o‘yinlar
+            </h2>
+
+            <p data-uz="O‘ynab turib yangi bilimlarni o‘rganing!"
+               data-en="Learn new things while playing!">
+                O‘ynab turib yangi bilimlarni o‘rganing!
+            </p>
+        </section>
+
+        <!-- QUIZZES -->
+        <section id="quizzes">
+            <h2 data-uz="🧠 Bilimlar sinovi"
+                data-en="🧠 Smart Quizzes">
+                🧠 Bilimlar sinovi
+            </h2>
+
+            <p data-uz="Bilimingizni sinab ko‘ring va yulduzlar yig‘ing!"
+               data-en="Test your knowledge and earn stars!">
+                Bilimingizni sinab ko‘ring va yulduzlar yig‘ing!
+            </p>
+        </section>
+
+        <!-- STORIES -->
+        <section id="stories">
+            <h2 data-uz="📖 Ertaklar olami"
+                data-en="📖 Story Time">
+                📖 Ertaklar olami
+            </h2>
+
+            <p data-uz="Qiziqarli hikoyalar va ertaklarni o‘qing!"
+               data-en="Read fun stories and fairy tales!">
+                Qiziqarli hikoyalar va ertaklarni o‘qing!
+            </p>
+        </section>
+
+        <!-- PROGRESS -->
+        <section id="progress">
+            <h2 data-uz="⭐ Mening natijalarim"
+                data-en="⭐ My Progress">
+                ⭐ Mening natijalarim
+            </h2>
+
+            <p data-uz="Bu yerda o‘qishdagi yutuqlaringizni kuzating."
+               data-en="Track your learning achievements here.">
+                Bu yerda o‘qishdagi yutuqlaringizni kuzating.
+            </p>
+        </section>
+
+        <!-- PROFILE -->
+       
+<section id="profile">
+    <h2 data-uz="👤 Mening profilim"
+        data-en="👤 My Profile">
+        👤 Mening profilim
+    </h2>
+
+    <p data-uz="KiddoLand profilingizga xush kelibsiz!"
+       data-en="Welcome to your KiddoLand profile!">
+        KiddoLand profilingizga xush kelibsiz!
+    </p>
+
+    <div class="profile-card">
+        <h3>🎨 Avatar tanlang</h3>
+
+        <div class="avatar-list">
+            <button class="avatar-option">🦊</button>
+            <button class="avatar-option">🐼</button>
+            <button class="avatar-option">🐸</button>
+            <button class="avatar-option">🦄</button>
+            <button class="avatar-option">🐱</button>
+            <button class="avatar-option">🐻</button>
+        </div>
+
+        <div id="selected-avatar">🐼</div>
+
+        <label for="player-name">Ismingiz:</label>
+        <input id="player-name"
+               type="text"
+               placeholder="Ismingizni yozing">
+
+        <button id="save-profile">💾 Saqlash</button>
+
+        <h3 id="welcome-player">Salom, o‘quvchi!</h3>
+
+     <p>⭐ Yulduzlaringiz: <span id="player-stars">0</span></p>
+
+        <h3>🏆 Mening darajam</h3>
+        <p>Level: <span id="player-level">1</span></p>
+
+        <div class="level-bar">
+         <div id="level-progress"></div>
+</div>
+
+<p id="level-message">Keyingi darajaga intiling! 🚀</p>
+
+    </div>
+</section>
+
+        <!-- AI ASSISTANT -->
+        <section id="assistant">
+            <h2 data-uz="🤖 Aqlli yordamchi"
+                data-en="🤖 Learning Assistant">
+                🤖 Aqlli yordamchi
+            </h2>
+
+            <p data-uz="Yangi narsalarni o‘rganishda yordamchi!"
+               data-en="Your helper for learning new things!">
+                Yangi narsalarni o‘rganishda yordamchi!
+            </p>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 data-uz="💜 KiddoLand haqida"
+                data-en="💜 About KiddoLand">
+                💜 KiddoLand haqida
+            </h2>
+
+            <p data-uz="Bolalar o‘rganadigan, o‘ynaydigan va rivojlanadigan qiziqarli olam!"
+               data-en="A fun place where children learn, play and grow!">
+                Bolalar o‘rganadigan, o‘ynaydigan va rivojlanadigan qiziqarli olam!
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+   
+
+    
+
+<!-- GAMES -->
+<section id="games">
+    <h2 data-uz="🎮 Qiziqarli o‘yinlar"
+        data-en="🎮 Fun Games">
+        🎮 Qiziqarli o‘yinlar
+    </h2>
+
+    <p data-uz="O‘ynab, bilimlaringizni oshiring!"
+       data-en="Learn while playing!">
+        O‘ynab, bilimlaringizni oshiring!
+    </p>
+
+    <div class="game-box">
+        <h3>🔢 Math Challenge</h3>
+
+        <p id="question">5 + 3 = ?</p>
+
+        <div id="answers" class="answer-grid"></div>
+
+        <p id="game-message">
+            Javobingizni tanlang!
+        </p>
+
+        <p id="score">⭐ Ball: 0</p>
+
+        <button id="next-question" class="button">
+            Keyingi savol ➜
+        </button>
+    </div>
+</section>
+      </section>
+
+    <script src="script.js"></script>
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+ 
+
+<!-- 🦄 AVATAR SHOP -->
+     
+<!-- 🌟 KIDDOLAND AVATAR COLLECTION -->
+
+<section id="avatar-shop">
+    <h2>🌟 Legendary Avatar Collection</h2>
+    <p>O'zingga yoqqan qahramonni tanla va yulduzlaringga ega bo'l!</p>
+
+    <h3>⭐ Yulduzlaring:
+        <span id="shop-stars">0</span>
+    </h3>
+
+    <div class="shop-container">
+
+        <div class="shop-item">
+            <div class="avatar-face astronaut"></div>
+            <h3>🚀 Astronaut</h3>
+            <p>50 ⭐</p>
+            <button onclick="buyAvatar('astronaut', 50)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face dragon"></div>
+            <h3>🐉 Dragon</h3>
+            <p>100 ⭐</p>
+            <button onclick="buyAvatar('dragon', 100)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face robot"></div>
+            <h3>🤖 Robot</h3>
+            <p>150 ⭐</p>
+            <button onclick="buyAvatar('robot', 150)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face elf"></div>
+            <h3>🌿 Elf</h3>
+            <p>200 ⭐</p>
+            <button onclick="buyAvatar('elf', 200)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face inventor"></div>
+            <h3>⚙️ Inventor</h3>
+            <p>250 ⭐</p>
+            <button onclick="buyAvatar('inventor', 250)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face cloud"></div>
+            <h3>☁️ Cloud</h3>
+            <p>300 ⭐</p>
+            <button onclick="buyAvatar('cloud', 300)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face phoenix"></div>
+            <h3>🔥 Phoenix</h3>
+            <p>350 ⭐</p>
+            <button onclick="buyAvatar('phoenix', 350)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face wizard"></div>
+            <h3>🪄 Wizard</h3>
+            <p>400 ⭐</p>
+            <button onclick="buyAvatar('wizard', 400)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face alien"></div>
+            <h3>👽 Alien</h3>
+            <p>450 ⭐</p>
+            <button onclick="buyAvatar('alien', 450)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face knight"></div>
+            <h3>🛡️ Knight</h3>
+            <p>500 ⭐</p>
+            <button onclick="buyAvatar('knight', 500)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face crystal"></div>
+            <h3>💎 Crystal</h3>
+            <p>600 ⭐</p>
+            <button onclick="buyAvatar('crystal', 600)">Sotib olish</button>
+        </div>
+
+        <div class="shop-item">
+            <div class="avatar-face gamer"></div>
+            <h3>🎧 Gamer</h3>
+            <p>700 ⭐</p>
+            <button onclick="buyAvatar('gamer', 700)">Sotib olish</button>
+        </div>
+
+    </div>
+</section>
+
+
+    <footer>
+        <p>© 2026 KiddoLand. Learn with fun! 🌈. Muallif:🎀Х.Рузибоева🎀</p>
+    </footer>
+</body>
+</html>
